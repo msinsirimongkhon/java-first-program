@@ -40,7 +40,7 @@ public class MortgageCalculator {
     }
 
     public static void main(String[] args){
-        long loanAmount = Utilities.getIntValue(args[0]);
+        long loanAmount = Utilities.getLongValue(args[0]);
         int termInYears = Utilities.getIntValue(args[1]);
         float annualRate = Utilities.getFloatValue(args[2]);
 

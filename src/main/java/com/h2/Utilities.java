@@ -7,7 +7,7 @@ public class Utilities {
         try {
             out = Long.parseLong(in);
         } catch(NumberFormatException e){
-            new IllegalArgumentException(in + "cannot be converted int a 'long' value. Exiting program.");
+            throw new IllegalArgumentException(in + " cannot be converted into a 'long' value. Exiting program.");
         }
 
         return out;
@@ -18,7 +18,7 @@ public class Utilities {
         try {
             out = Integer.parseInt(in);
         }catch(NumberFormatException e){
-            new IllegalArgumentException(in + " cannot be converted into a 'new' value. Exiting program.");
+            throw new IllegalArgumentException(in + " cannot be converted into a 'int' value. Exiting program.");
         }
 
         return out;
@@ -29,7 +29,7 @@ public class Utilities {
         try {
             out = Float.parseFloat(in);
         }catch(NumberFormatException e){
-            new IllegalArgumentException(in + " cannot be converted into a 'new' value. Exiting program.");
+            throw new IllegalArgumentException(in + " cannot be converted into a 'float' value. Exiting program.");
         }
 
         return out;
